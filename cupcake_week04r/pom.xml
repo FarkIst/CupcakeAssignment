@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany</groupId>
-    <artifactId>cupcake_week04r</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>cupcakeX</artifactId>
+    <version>1.0</version>
     <packaging>war</packaging>
 
     <name>cupcake_week04</name>

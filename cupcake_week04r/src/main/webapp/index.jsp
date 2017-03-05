@@ -49,7 +49,7 @@
 			<button class="action filter__item" data-filter=".dresses"><i class="icon icon--dress"></i><span class="action__text">Nutmeg</span></button>
 			<button class="action filter__item" data-filter=".trousers"><i class="icon icon--trousers"></i><span class="action__text">Pistacio</span></button>
 			<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Almond</span></button>
-            <button1 onclick="document.getElementById('id01').style.display='block'">Login</button1>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
                             
         </div>
                         
@@ -163,7 +163,7 @@ class="close" title="Close Modal">&times;</span>
         </div>
         <div class="modal-footer">
         <!--  <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button> -->
-          <button type="button1" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary action--buy "><i class="fa fa-shopping-cart"></i> Add to cart</button>
         </div>
       </div>
@@ -175,7 +175,7 @@ class="close" title="Close Modal">&times;</span>
          
 			<div class="grid__item shirts">
 				<div class="slider">
-					<div class="slider__item"><img src="images/VanillaBottom.jpg" alt="Vanil" /></div>
+					<div class="slider__item"><img src="images/VanillaBottom.jpg" alt="Vanilla" /></div>
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">Vanilla Bottom</h3>

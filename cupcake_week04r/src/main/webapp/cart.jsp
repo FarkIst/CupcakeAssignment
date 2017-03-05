@@ -50,7 +50,7 @@
         </div>
         
         </div>
-              <div id="id01" class="modal">
+   <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" 
 class="close" title="Close Modal">&times;</span>
 
@@ -70,7 +70,7 @@ class="close" title="Close Modal">&times;</span>
       <button type="submit">Login</button>
       <input type="checkbox" checked="checked"> Remember me
     </div>
-
+      
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>

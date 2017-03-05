@@ -11,9 +11,9 @@ public class DBConnector {
 	
 	private static final String IP	     = "localhost";
 	private static final String PORT     = "3306";
-	public static final String DATABASE  = "cupcakeDB";
+	public static final String DATABASE  = "new";
 	private static final String USERNAME = "root"; 
-	private static final String PASSWORD = "1234";	     	
+	private static final String PASSWORD = "kittykat69kilencvenharom";	     	
 	
 	public DBConnector() throws Exception {
    		Class.forName("com.mysql.jdbc.Driver").newInstance();

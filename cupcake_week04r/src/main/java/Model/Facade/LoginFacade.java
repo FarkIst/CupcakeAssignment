@@ -4,18 +4,39 @@
  * and open the template in the editor.
  */
 package Model.Facade;
+import Model.DBConnector;
 import Model.Error.LoginError;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 /**
  *
  * @author Farkas
  */
 public class LoginFacade {
     
-      public static void validate( String username, String password ) throws LoginError {
-        if ( "1234".equals( password ) ) {
-            return;
+      public static ResultSet validate( String username, String password ) throws LoginError, Exception {
+          
+        DBConnector mydb = new DBConnector();
+        Connection conn = mydb.getConnection();
+        Statement stmt = conn.createStatement();
+        String sql = "select * from User where name=?";
+        ResultSet rs = stmt.executeQuery(sql);
+        if (rs.next()){
+            String pw = rs.getString("password");
+            if(pw.equals(password)){
+                return rs;
+            }
+            else {
+                throw new LoginError();
+            }
         }
-        throw new LoginError();
+        else {
+            throw new LoginError();
+        }
+          
+     
+        
     }
     
       public static String[] getToppings(){
